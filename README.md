@@ -11,5 +11,11 @@ scripts includes:
 - trainsinglecontour.py #training
 - predictcontour.py #predict
 
+dependencies:
+- tensorflow
+- numpy
+- PIL
+- opencv
+
 To predict,run ```python predictcontour.py```.Edit line 17 to change the image location.
 
