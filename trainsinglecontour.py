@@ -3,6 +3,7 @@ import tensorflow as tf
 import os
 from PIL import Image
 import shutil
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 input = temp= tf.placeholder(dtype='float32', shape=(None,32,32,1), name='input')
 

@@ -12,8 +12,9 @@ import PIL.ImageFilter as ImageFilter
 import colorsys
 import cv2
 import tensorflow as tf
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-im = cv2.imread(r'EKXJ.png')
+im = cv2.imread(r'MMMY.png')
 im = 255 - np.maximum(im[:,:,1],im[:,:,2])
 thresh,im = cv2.threshold(im, 230, 255, cv2.THRESH_BINARY)
 #_, contours, hierarchy = cv2.findContours(im, cv2.RETR_EXTERNAL  , cv2.CHAIN_APPROX_SIMPLE)
