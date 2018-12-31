@@ -74,8 +74,8 @@ with tf.Session() as sess:
     sds = sess.run([graph.get_tensor_by_name("output:0")],feed_dict={graph.get_tensor_by_name("input:0"):np.expand_dims(np.array(ims)/255.0,axis=-1)})
     for i in sds[0]:
         if i<10:
-            print(chr(i+48))
+            print(chr(i+48),end='')
         else:
-            print(chr(i-10+65))
+            print(chr(i-10+65),end='')
 
 
