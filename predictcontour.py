@@ -65,7 +65,7 @@ for i in  range(len(order_outer_contours)):
     #     os.mkdir(testpath)
     # im.save(os.path.join(testpath,str(uuid.uuid4()) + ".jpg"),'JPEG')
 
-saver = tf.train.import_meta_graph(r'singlemodel\captchabreak.ckpt.meta')
+saver = tf.train.import_meta_graph(r'singlemodel/captchabreak.ckpt.meta')
 # for i in tf.get_default_graph().get_operations():
 #     print(i.name)
 with tf.Session() as sess:
