@@ -1,3 +1,4 @@
+**Accuracy is horrible,about 20% i guess.**
 This is the captcha we are trying to bypass:[link](https://authsu18.alipay.com/login/index.htm)
 
 <div align='left'>
@@ -9,5 +10,5 @@ scripts includes:
 - trainsinglecontour.py #training
 - predictcontour.py #predict
 
-To predict,run ```python predictcontour.py```.Edit line 17 to change the image location.\
-**Accuracy is horrible,about 20% i guess.**
+To predict,run ```python predictcontour.py```.Edit line 17 to change the image location.
+
