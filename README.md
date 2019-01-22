@@ -12,6 +12,7 @@ scripts includes:
 - predictcontour.py #predict
 
 dependencies:
+- python3.6 #never tested other versions
 - tensorflow
 - numpy
 - PIL
